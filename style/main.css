@@ -1,0 +1,91 @@
+/*========== Variáveis ==========*/
+:root{
+  --red: #e50914;
+  --black: #141414;
+}
+
+/*========== CSS Reset ==========*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*========== Body rules ==========*/
+body{
+  background: var(--black);
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+
+/*========== Header rules ==========*/
+header div.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  margin-left: 5px;
+  color: var(--red);
+  font-family: 'Bebas Neue';
+  font-size: 40px;
+}
+
+header nav a{
+  text-decoration: none;
+  color: #e5e5e5;
+  margin-right: 1rem;
+}
+
+header nav a:hover{
+  color: #a5a5a5;
+}
+
+header nav a:first-child{
+  font-weight: bold;
+  color: #fff
+}
+
+/*========== Main rules ==========*/
+.principal{
+  font-size: 16px;
+  height: 600px;
+  background: url('../images/capa-house.jpg'), 
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal .description{
+  margin: 10px 0 60px;
+}
+
+.principal .title{
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.principal .button{
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,0.8);
+  color: var(--black);
+}
+
+.button i{
+  margin-right: 8px;
+}
