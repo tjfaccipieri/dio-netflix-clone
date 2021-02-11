@@ -14,7 +14,7 @@
 /*========== Body rules ==========*/
 body{
   background: var(--black);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: #fff;
 }
 
@@ -48,16 +48,24 @@ header nav a:first-child{
 }
 
 /*========== Main rules ==========*/
+.container{
+  margin-left: 20px;
+}
+
 .principal{
   font-size: 16px;
   height: 600px;
   background: url('../images/capa-house.jpg'), 
-    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%);
+  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)100%);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.principal .container{
+  width: 70%;
 }
 
 .principal .description{
@@ -88,4 +96,34 @@ header nav a:first-child{
 
 .button i{
   margin-right: 8px;
+}
+
+/*========== Film Box rules ==========*/
+.box-film{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel{
+  margin-top: 35px;
+}
+
+/*========== Responsive rules ==========*/
+@media (max-width:700px){
+  header .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button{
+    margin-top: 5px;
+    width: 190px;
+  }
+}
+
+@media (min-width:1000px){
+  .description{
+    width: 50%;
+  }
 }
